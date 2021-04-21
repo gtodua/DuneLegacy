@@ -1,3 +1,12 @@
+This is a Fork of the Dune Legacy project http://dunelegacy.sourceforge.net/website/index.html
+
+I have forked this project just to play around with it.
+
+The changes/fixes I have done so far is:
+
+* Fixing the Visual Studio solution so that it buids. There was quite a few file references either missing or incorrect. In theory you can now open the VS solution /IDE/VC/DuneLegacy.sln and just run it.
+
+---
 
               /-------------------------------\
               |                               |
