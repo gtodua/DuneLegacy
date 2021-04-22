@@ -67,22 +67,18 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>..\..\bin\$(Configuration)-$(Platform)\</OutDir>
     <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
-    <LibraryPath>$(ProjectDir)..\..\libs\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>..\..\bin\$(Configuration)-$(Platform)\</OutDir>
     <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
-    <LibraryPath>$(ProjectDir)..\..\libs\SDL2\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>..\..\bin\$(Configuration)-$(Platform)\</OutDir>
     <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
-    <LibraryPath>$(ProjectDir)..\..\libs\SDL2\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>..\..\bin\$(Configuration)-$(Platform)\</OutDir>
     <IntDir>obj\$(Configuration)-$(Platform)\</IntDir>
-    <LibraryPath>$(ProjectDir)..\..\libs\SDL2\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -100,7 +96,7 @@
       <MinimalRebuild>false</MinimalRebuild>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_ttf.lib;SDL2_mixer.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2maind.lib;ws2_32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
     </Link>
     <PostBuildEvent>
